@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+.intro{
+    background: #FCDE7C;
+    width: 100%;
+}
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+
+}
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(3){
+    
+    
+    
+    margin-top: 10px;
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+
+}
+
+
+
+
+
+.intro-right{
+    height: 740px;
+    width: 100%;
+   background: url(../../img/orange_boy.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* 
+BUTTON EFFECT
+*/
+
+
+
+/*  */
+  
+
+@media screen and (max-width: 480px) {
+   
+  
+    .i-right {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+    .i-right .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+    .intro-right{
+        height: 450px;
+    }
+  }

@@ -1,0 +1,37 @@
+.navbox{
+    height: 10vh;
+        
+    
+}
+
+
+.nav-l{
+    text-decoration: none;
+    color: black;
+}
+.nav-l:hover{
+    color: var(--orange);
+}
+.cv-btn{
+    background-color: transparent;
+  border: none;
+  color:var(--orange);
+  font-size: 16px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  /* border: 2px solid var(--orange); */
+  position: relative; 
+  z-index: 1;
+}
+.nav-item p:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+@media screen and (max-width: 980px){
+    .navbox{
+        height: auto;
+    }
+}

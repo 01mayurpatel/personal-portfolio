@@ -1,0 +1,37 @@
+.sec-prog{
+  
+    height: 20px;
+  
+    color: black;
+    border: solid 2px var(--orange);
+    
+}
+.prog-fill{
+    background-color: var(--orange);
+    height: 100%;
+    /* width: 60%; */
+    background-color: var(--orange);
+    
+    
+}
+.site-section h2,
+.site-section h3 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+.img-lines {
+    margin: 10px 0 40px;
+    transform: scaleX(2);
+}
+@media screen and (max-width:650px) {
+    #skills{
+        margin-top: 40px;
+    }
+    .sec-prog{
+        height: 15px;
+    }
+}
+
