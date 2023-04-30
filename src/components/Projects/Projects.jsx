@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import './Projects.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
@@ -11,50 +11,13 @@ import P4 from '../../img/p4.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 
-import { motion } from "framer-motion";
-import { useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+
 function Projects() {
     
-    const [ref, inView] = useInView();
-    const [ref2, inView2] = useInView();
-    const [flag1,setflag1] = useState(false);
-    const [flag2,setflag2] = useState(false);
+    
     
   
-    const animation = useAnimation();
-    const animation2 = useAnimation();
-    useEffect(() => {
-       if(!flag1){
-        if (inView) {
-            animation.start({
-                x: 0,
-                transition: {
-                    type: 'spring', duration: 1.3, bounce: 0.2
-                }
-            });
-             setflag1(true);
-        }
-        if (!inView) {
-            animation.start({ x: '-100vw' })
-        }
-       }
-       if(!flag2){
-        if(inView2){
-            animation2.start({
-                x: 0,
-                transition: {
-                    type: 'spring', duration: 1.3, bounce: 0.2
-                }
-            });
-            setflag2(true);
-        }
-        if (!inView2) {
-            animation2.start({ x: '100vw' })
-        }
-    }
-        console.log("In view ", inView);
-    }, [inView,inView2]);
+    
 
 
     return (
@@ -71,9 +34,9 @@ function Projects() {
                                 Look Over My Recent <span style={{ color: '#FCA61F' }}><h3>PROJECTS</h3></span>
                             </h3>
                         </div>
-                        <div ref={ref}>
-                            <motion.div
-                                animate={animation}
+                        <div >
+                            <div
+                                
 
                                 className="p-box  mt-4 box-section-in box-contain">
                                 <div className="box-contain">
@@ -100,7 +63,7 @@ function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
                         <div >
                             <div
@@ -166,9 +129,9 @@ function Projects() {
                         </div>
                         </div>
 
-                        <div ref={ref2}>
-                            <motion.div
-                            animate={animation2} 
+                        <div>
+                            <div
+                            
                             className="p-box  mt-4 box-section-in box-contain">
                                 <div className="box-contain">
                                     <div class="respo">
@@ -194,7 +157,7 @@ function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
                         <div className="mt-4" style={{ height: '120px' }}>
                             <div className='text-center pt-3'>
