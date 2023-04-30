@@ -9,18 +9,18 @@ import P3 from '../../img/p3.png'
 import P4 from '../../img/p4.png'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { themeContext } from '../../Context';
-import { useContext } from "react";
+
+
 import { motion } from "framer-motion";
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 function Projects() {
-    const theme = useContext(themeContext);
+    
     const [ref, inView] = useInView();
     const [ref2, inView2] = useInView();
     const [flag1,setflag1] = useState(false);
     const [flag2,setflag2] = useState(false);
-    const darkMode = theme.state.darkMode;
+    
   
     const animation = useAnimation();
     const animation2 = useAnimation();
@@ -93,9 +93,9 @@ function Projects() {
                                         <div className='d-flex justify-content-between' style={{ marginTop: '0', marginBottom: '12px' }}>
                                             <span>
 
-                                               <a style={{textDecoration:'none'}} href="https://textmayur.netlify.app/" target='_blank'> <button type="submit" className="button" >View Demo</button></a>
+                                               <a style={{textDecoration:'none'}} rel="noreferrer" href="https://textmayur.netlify.app/" target='_blank'> <button type="submit" className="button" >View Demo</button></a>
                                             </span>
-                                           <a style={{textDecoration:'none'}} href='https://github.com/01mayurpatel/text-utils' target='_blank'> <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
+                                           <a style={{textDecoration:'none'}} rel="noreferrer" href='https://github.com/01mayurpatel/text-utils' target='_blank'> <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
 
                                         </div>
                                     </div>
@@ -123,9 +123,9 @@ function Projects() {
                                         <div className='d-flex justify-content-between' style={{ marginTop: '0', marginBottom: '12px' }}>
                                             <span>
 
-                                                <a href="https://mayur-dynamic-quotes.netlify.app/" style={{textDecoration:'none'}} target='_blank'><button type="submit" className="button" >View Demo</button></a>
+                                                <a href="https://mayur-dynamic-quotes.netlify.app/" rel="noreferrer" style={{textDecoration:'none'}} target='_blank'><button type="submit" className="button" >View Demo</button></a>
                                             </span>
-                                           <a href="https://github.com/01mayurpatel/dynamic-quotes" style={{textDecoration:'none'}} target='_blank'> <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
+                                           <a href="https://github.com/01mayurpatel/dynamic-quotes" rel="noreferrer" style={{textDecoration:'none'}} target='_blank'> <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
 
                                         </div>
                                     </div>
@@ -156,9 +156,9 @@ function Projects() {
                                     <div className='d-flex justify-content-between' style={{ marginTop: '0', marginBottom: '12px' }}>
                                         <span>
 
-                                            <a href="https://dynamic-weather.onrender.com/" target='_blank' style={{textDecoration:'none'}}><button type="submit" className="button" >View Demo</button></a>
+                                            <a href="https://dynamic-weather.onrender.com/" rel="noreferrer" target='_blank' style={{textDecoration:'none'}}><button type="submit" className="button" >View Demo</button></a>
                                         </span>
-                                      <a href="https://github.com/01mayurpatel/dynamic_weather" target='none' style={{textDecoration:'none'}}>  <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
+                                      <a href="https://github.com/01mayurpatel/dynamic_weather" rel="noreferrer" target='none' style={{textDecoration:'none'}}>  <GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
 
                                     </div>
                                 </div>
@@ -187,9 +187,9 @@ function Projects() {
                                         <div className='d-flex justify-content-between' style={{ marginTop: '0', marginBottom: '12px' }}>
                                             <span>
 
-                                              <a href="https://01mayurpatel.github.io/travel/" style={{textDecoration:'none'}} target='_blank'>  <button type="submit" className="button" >View Demo</button></a> 
+                                              <a href="https://01mayurpatel.github.io/travel/" rel="noreferrer" style={{textDecoration:'none'}} target='_blank'>  <button type="submit" className="button" >View Demo</button></a> 
                                             </span>
-                                            <a href='https://github.com/01mayurpatel/travel.git' style={{textDecoration:'none'}} target='_blank'><GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
+                                            <a href='https://github.com/01mayurpatel/travel.git' rel="noreferrer" style={{textDecoration:'none'}} target='_blank'><GitHubIcon className='c-icons' style={{ fontSize: '40px' }} /></a>
 
                                         </div>
                                     </div>
@@ -199,7 +199,7 @@ function Projects() {
                         <div className="mt-4" style={{ height: '120px' }}>
                             <div className='text-center pt-3'>
 
-                                <a href="https://github.com/01mayurpatel" style={{textDecoration:'none'}} target='_blank'><button type="submit" className="button" >View all projects</button></a>
+                                <a href="https://github.com/01mayurpatel" rel="noreferrer" style={{textDecoration:'none'}} target='_blank'><button type="submit" className="button" >View all projects</button></a>
                             </div>
                         </div>
                     </Col>
