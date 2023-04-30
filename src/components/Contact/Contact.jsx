@@ -5,12 +5,7 @@ import { useState } from 'react';
 import { useRef } from "react"
 import { themeContext } from '../../Context';
 import { useContext } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom"
+
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -91,18 +86,18 @@ function Contact() {
                                         <h6>Social Profiles</h6>
                                     </div>
                                     <div className='text-center'>
-                                    <a href='https://github.com/01mayurpatel?tab=repositories' target='_blank'><GitHubIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
+                                    <a rel="noreferrer" href='https://github.com/01mayurpatel?tab=repositories' target='_blank'><GitHubIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
                                         </a>
-                                        <a href='https://www.linkedin.com/in/mayur-patel-b8806220b' target='_blank'><LinkedInIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
+                                        <a rel="noreferrer" href='https://www.linkedin.com/in/mayur-patel-b8806220b' target='_blank'><LinkedInIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
                                         </a>
-                                        <a href='https://www.instagram.com/_mayur._.patel_/' target='_blank'><InstagramIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
+                                        <a rel="noreferrer" href='https://www.instagram.com/_mayur._.patel_/' target='_blank'><InstagramIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
                                         </a>
-                                        <a href='https://www.facebook.com/profile.php?id=100007686634229' target='_blank'><FacebookRoundedIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
+                                        <a rel="noreferrer" href='https://www.facebook.com/profile.php?id=100007686634229' target='_blank'><FacebookRoundedIcon className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
                                         </a>
                                        
 
                                        
-                                        <a href='https://twitter.com/MayurPatel0101' target='_blank'><Twitter className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
+                                        <a rel="noreferrer" href='https://twitter.com/MayurPatel0101' target='_blank'><Twitter className='c-icons' style={{ fontSize: '40px', border: darkMode ? '1px solid orange' : 'none' }} />
                                         </a>
                                         
                                     </div>
