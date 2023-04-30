@@ -14,7 +14,7 @@ import { faAnglesDown} from '@fortawesome/free-solid-svg-icons'
 
 function Intro() {
   
-  const transition = {duration : 2 , type:'spring' }
+  
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
