@@ -15,7 +15,7 @@ import { useContext } from "react";
 function Education() {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-    const transition = { duration: 1.5, type: 'spring' }
+    const transition = { duration: 0.9, type: 'spring' }
     return (
         <div id='Education' className='mt-4'>
     
