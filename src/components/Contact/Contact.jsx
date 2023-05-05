@@ -23,7 +23,7 @@ import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 function Contact() {
-    const transition = { duration: 1.5, type: 'spring' }
+    const transition = { duration: 0.9, type: 'spring' }
 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
