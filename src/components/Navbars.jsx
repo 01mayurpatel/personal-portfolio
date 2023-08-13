@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { themeContext } from '../Context';
 import { useContext } from "react";
 import { Container } from 'react-bootstrap';
-import Resume from '../Resume.pdf'
+import Resume from '../Mayur_Patel_Resume.pdf'
 function Navbars() {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
